@@ -8,7 +8,7 @@ body{ font-family: "Poppins", sans-serif;}
 .about-banner{background:   url('/img/about-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
 .service-banner{background:   url('/img/service-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
 .pricing-banner{background:   url('/img/pricing-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
-.contact-banner{background:   url('/img/contact-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.contact-banner{background:   url('img/contact-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
 
 
   
