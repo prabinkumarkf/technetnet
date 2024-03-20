@@ -9,8 +9,8 @@ body{ font-family: "Poppins", sans-serif;}
 .service-banner{background:   url('img/service-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
 .pricing-banner{background:   url('img/pricing-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
 .contact-banner{background:   url('img/contact-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
-.home-banner {background: url('img/static-home.jpg') ; background-size: cover;
-  background-repeat: no-repeat;
+.fresh-banner{background:   url('img/fresh-ban.jpeg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.home-banner {background: url('img/static-home.jpg') ; background-size: cover; background-repeat: no-repeat;
   background-position: center center; } 
 
 .pattern {
