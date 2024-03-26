@@ -255,7 +255,7 @@
           </p>
         </div>
         <!-- Plan switch -->
-        <div class="flex items-center justify-center mt-10 space-x-4">
+      <!--   <div class="flex items-center justify-center mt-10 space-x-4">
           <span class="text-base font-medium">Bill Monthly</span>
           <button
             class="relative rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus: ring-[#1F85B7] "
@@ -271,7 +271,7 @@
             ></div>
           </button>
           <span class="text-base font-medium">Bill Annually</span>
-        </div>
+        </div>-->
         <!-- Plans -->
         <div
           class="flex flex-col items-center justify-center mt-16 space-y-8 lg:flex-row lg:items-stretch lg:space-x-8 lg:space-y-0"
@@ -298,7 +298,7 @@
               <!--  -->
               <div class="flex-shrink-0 pb-6 space-y-2 border-b">
                 <h2 class="text-2xl font-normal" x-text="plan.name"></h2>
-                <p class="text-sm text-gray-400" x-text="plan.discretion"></p>
+                <!-- <p class="text-sm text-gray-400" x-text="plan.discretion"></p>-->
               </div>
               <!-- Features -->
               <ul class="flex-1 space-y-4">
@@ -346,34 +346,34 @@
 
           plans: [
             {
-              name: "Easy",
+              name: "Basic",
               discretion:
                 "All the basics for businesses that are just getting started.",
               price: {
-                monthly: 29,
+                monthly: 500,
                 annually: 29 * 12 - 199,
               },
-              features: ["One project"],
+              features: ['4 - 8 Leads/Meetings /Month', 'Email Campaign', 'Campaign Set-Up'],
             },
             {
-              name: "Basic",
+              name: "Standard",
               discretion:
                 "Better for growing businesses that want more customers.",
               price: {
-                monthly: 59,
+                monthly: 1000,
                 annually: 59 * 12 - 100,
               },
-              features: ["Two projects"],
+              features: ['10-15 Leads/Meetings /Month', 'Email Campaign', 'Campaign Set-Up'],
             },
             {
-              name: "Custom",
+              name: "Professional",
               discretion:
                 "Advanced features for pros who need more customization.",
               price: {
-                monthly: 139,
+                monthly: 2500,
                 annually: 139 * 12 - 100,
               },
-              features: ["Unlimited projects"],
+              features: ['25 to 35 Leads/Meetings /Month', 'Email Campaign', 'Campaign Set-Up'],
             },
           ],
         };
@@ -413,39 +413,11 @@
                 </thead>-->
           <tbody class="space-y-10 text-center divide-y">
             <tr>
-              <th scope="row" class="text-left w-72">
-                <h3 class="py-3">Euismod</h3>
+              <th scope="row" class="text-left w-72 py-5">
+                <h3 class="py-3">Expected Results                </h3>
               </th>
-              <td>
-                <span class="block text-sm">1</span>
-              </td>
-              <td>
-                <span class="block text-sm">10</span>
-              </td>
-              <td>
-                <span class="block text-sm">100</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-left">
-                <h3 class="py-3">Principes et</h3>
-              </th>
-              <td>
-                <span class="block text-sm">0,5 GB</span>
-              </td>
-              <td>
-                <span class="block text-sm">5 GB</span>
-              </td>
-              <td>
-                <span class="block text-sm">500 GB</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-left">
-                <h3 class="py-3">Et mel porro</h3>
-              </th>
-              <td>
-                <svg
+              <td  >
+                <span class="block text-sm opacity-20">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -457,14 +429,14 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span>
               </td>
               <td>
-                <svg
+                <span class="block text-sm ">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Included in Standard plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -472,14 +444,14 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span>
               </td>
               <td>
-                <svg
+                <span class="block text-sm">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Included in Premium plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -487,34 +459,20 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span>
               </td>
             </tr>
             <tr>
-              <th scope="row" class="text-left">
-                <h3 class="py-3">Veniam suscipiantur</h3>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3">Email Campaign
+                </h3>
               </th>
               <td>
-                <svg
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Not included in Free plan"
-                  class="w-5 h-5 mx-auto"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </td>
-              <td>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-label="Included in Standard plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -522,14 +480,14 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span></span>
               </td>
               <td>
-                <svg
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Included in Premium plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -537,49 +495,35 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span></span>
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
               </td>
             </tr>
             <tr>
-              <th scope="row" class="text-left">
-                <h3 class="py-3">Ornatus tacimates</h3>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3">Telemarketer (Cold Calls)
+                </h3>
               </th>
               <td>
-                <svg
+                <span class="block text-sm opacity-20"> <span class="block text-sm ">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Not included in Free plan"
-                  class="w-5 h-5 mx-auto"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </td>
-              <td>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-label="Not included in Standard plan"
-                  class="w-5 h-5 mx-auto"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </td>
-              <td>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-label="Included in Premium plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -587,49 +531,120 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span></span>
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
               </td>
             </tr>
             <tr>
-              <th scope="row" class="text-left">
-                <h3 class="py-3">Aliquam fastidii in mei</h3>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3">Campaign Set-Up (2 weeks)
+                </h3>
               </th>
               <td>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-label="Not included in Free plan"
-                  class="w-5 h-5 mx-auto"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                FREE
               </td>
               <td>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-label="Not included in Standard plan"
-                  class="w-5 h-5 mx-auto"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                FREE
               </td>
               <td>
-                <svg
+                FREE
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3">Minimum term (2 weeks)                </h3>
+              </th>
+              <td>
+                3 months
+
+              </td>
+              <td>
+                3 months
+
+              </td>
+              <td>
+                6 months
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3">Notice period (2 weeks)
+                </h3>
+              </th>
+              <td>
+                30 days
+
+              </td>
+              <td>
+                30 days
+
+              </td>
+              <td>
+                30 days
+
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 text-2xl">Feature
+
+                </h3>
+              </th>
+              <td>
+                
+
+              </td>
+              <td>
+                
+
+              </td>
+              <td>
+               
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Dedicated team (AM, SDR, Researcher, Copywriter, Email Deliverability Expert, Telemarketer)
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-label="Included in Premium plan"
+                  aria-label="Included in Free plan"
                   class="w-5 h-5 mx-auto"
                 >
                   <path
@@ -637,7 +652,400 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd"
                   ></path>
-                </svg>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Our team research every target account and write a 100% personalised line. (Boosts Response Rates)                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Copywriting and A/B testing
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Email Infrastructure Setup & Anti-Spam activity
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 text-2xl">Data
+
+                </h3>
+              </th>
+              <td>
+                
+
+              </td>
+              <td>
+                
+
+              </td>
+              <td>
+               
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Ideal Customer Profile Consultation
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">< 1% email bounce rate
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-left py-5">
+                <h3 class="py-3 ">Crunchbase Finance Data
+
+                </h3>
+              </th>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+              <td>
+                <span class="block text-sm"> <span class="block text-sm ">  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-label="Included in Free plan"
+                  class="w-5 h-5 mx-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg></span></span>
+
+              </td>
+            </tr>
+            <tr class="">
+              <th scope="row" class="text-left py-5">
+                
+              </th>
+              <td class="py-5">
+                <button class="inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors border rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus: ring-[#1F85B7] bg-[#1F85B7] text-white hover:bg-[#1F85B7]" :class="plan.name == 'Basic' ? ' bg-[#1F85B7]  text-white hover:bg-[#1F85B7] ' : 'hover:bg-[#1F85B7]  hover:text-white'" x-text="`Get ${plan.name}`">Get Started</button>
+
+              </td>
+              <td>
+                <button class="inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors border rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus: ring-[#1F85B7] bg-[#1F85B7] text-white hover:bg-[#1F85B7]" :class="plan.name == 'Basic' ? ' bg-[#1F85B7]  text-white hover:bg-[#1F85B7] ' : 'hover:bg-[#1F85B7]  hover:text-white'" x-text="`Get ${plan.name}`">Get Started</button>
+
+              </td>
+              <td>
+                <button class="inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors border rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus: ring-[#1F85B7] bg-[#1F85B7] text-white hover:bg-[#1F85B7]" :class="plan.name == 'Basic' ? ' bg-[#1F85B7]  text-white hover:bg-[#1F85B7] ' : 'hover:bg-[#1F85B7]  hover:text-white'" x-text="`Get ${plan.name}`">Get Started</button>
+
               </td>
             </tr>
           </tbody>
